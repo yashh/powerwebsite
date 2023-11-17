@@ -39,8 +39,9 @@
                 a level playing field in payments is key to improving the overall health of the economy.</p>
             <div class="sign-up-form w-form">
                 <form name="mailing_list" class="w-clearfix">
-                    <input type="email" class="field w-input" maxlength="256" name="email" data-name="Email"
-                        placeholder="Enter your email address" id="field" required="" />
+                    <input type="email" class="field w-input" maxlength="256" name="email"
+                        placeholder="Enter your email address" id="emailfield" required="" />
+                    <input type="hidden" name="timestamp" />
                     <input type="submit" value="Get Notified" class="button w-button" />
                 </form>
                 <div class="success-message w-form-done">
@@ -82,13 +83,17 @@
     </div>
 </body>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFX10_T4zD9AKkuFv1LTi2e50txow7FaR7qtGA4RNvOyaJrfk9wDaPEEp-8AnAHoHh/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPjbdbiqmkAKUYUu6HJxeDjG4gjsNltXM9FlSUSeKFs_rqhb9UpyIAGLMXO4aUllbL/exec'
     const form = document.forms['mailing_list']
 
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: new FormData(form) })
-            .then(response => console.log('Success!', response))
+            .then(response => {
+                console.log('Success!', response);
+                alert("Email registered");
+                form.reset();
+            })
             .catch(error => console.error('Error!', error.message))
     })
 </script>
