@@ -4,6 +4,11 @@ body {
 	margin: 0 0;
 }
 
+a, a:visited, a:hover, a:active {
+    text-decoration: underline;
+    color: white;
+}
+
 .left-content {
 	background-color: #000;
 }
@@ -64,6 +69,10 @@ body {
 	color: #15E910;
 }
 
+#bold {
+	font-family: "Favorit-Pro-Medium", Helvetica, sans-serif;
+}
+
 .right-content {
 	background-color: #212121;
 	width: 50%;
@@ -78,6 +87,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
     align-items: center;
+    overflow-y: auto;
 }
 
 .message-container {
@@ -92,6 +102,40 @@ body {
 	color: white;
 	font-size: 1.25vw;
 	letter-spacing: .02vw;
+}
+
+.text-wrapper {
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+    z-index: -1000;
+}
+
+.text-container {
+    width: 40vw;
+    height: 100%;
+    padding-left: 3vw;
+    padding-top: 10vw;
+	animation: fadeIn .6s ease-in-out forwards;
+}
+
+.text {
+	font-family: "Favorit-Pro-Light", Helvetica, sans-serif;
+	color: white;
+	font-size: 1vw;
+	letter-spacing: .02vw;
+	line-height: 1.5vw;
+}
+
+h1 {
+	font-size: 2.5vw;
+}
+
+h2 {
+	font-size: 1.5vw;
 }
 
 .highlight-1 {
@@ -252,8 +296,6 @@ body {
 
 .footer-left a:hover, .footer-right a:hover {
     text-decoration: none;
-    padding-bottom: .175vw;
-    border-bottom: .07vw solid white;
 }
 
 ::selection {
@@ -273,7 +315,7 @@ body {
 ====================================================================================================== */
 
 
-@media
+@media 
 only screen and (max-width: 900px)
 
 {
@@ -303,17 +345,20 @@ only screen and (max-width: 900px)
 		font-size: 12vw;
 		letter-spacing: -0.5vw;
 		line-height: 10vw;
+		background-color: #000;
+		padding-bottom: 2vw;
+		z-index: 1000;
 	}
 
 	.message-wrapper {
 		display: block;
-		height: 100%;
+	    height: 100vh;
 		padding-top: 24vw;
+		margin-bottom: 200vw;
 	}
 
 	.message-container {
 	    width: 86vw;
-	    height: 100vw;
 	    padding-left: 3vw;
 	}
 
@@ -321,6 +366,33 @@ only screen and (max-width: 900px)
 		font-size: 4vw;
 		letter-spacing: .02vw;
 		line-height: 6vw;
+	}
+
+	.text-wrapper {
+		display: block;
+		height: 120vw;
+		padding-top: 24vw;
+	}
+
+	.text-container {
+		height: 100%;
+	    width: 86vw;
+	    padding-left: 3vw;
+	    padding-top: 0vw;
+	}
+
+	.text {
+		font-size: 3vw;
+		letter-spacing: .02vw;
+		line-height: 5vw;
+	}
+
+	h1 {
+		font-size: 5.5vw;
+	}
+
+	h2 {
+		font-size: 3.75vw;
 	}
 
 	.highlight-1 {
@@ -423,3 +495,10 @@ only screen and (max-width: 900px)
 	#yes-mobeel, .yes-mobeel {
   		display: block;
   	}
+
+
+
+
+
+
+

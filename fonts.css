@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'Favorit-Pro-Bold';
+	src: url('assets/fonts/ABCFavoritPro-Bold-Trial.woff2') format('woff2'),
+		 url('assets/fonts/ABCFavoritPro-Bold-Trial.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Favorit-Pro-Medium';
+	src: url('assets/fonts/ABCFavoritPro-Medium-Trial.woff2') format('woff2'),
+		 url('assets/fonts/ABCFavoritPro-Medium-Trial.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Favorit-Pro-Regular';
+	src: url('assets/fonts/ABCFavoritPro-Regular-Trial.woff2') format('woff2'),
+		 url('assets/fonts/ABCFavoritPro-Regular-Trial.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Favorit-Pro-Book';
+	src: url('assets/fonts/ABCFavoritPro-Book-Trial.woff2') format('woff2'),
+		 url('assets/fonts/ABCFavoritPro-Book-Trial.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Favorit-Pro-Light';
+	src: url('assets/fonts/ABCFavoritPro-Light-Trial.woff2') format('woff2'),
+		 url('assets/fonts/ABCFavoritPro-Light-Trial.woff') format('woff');
+	font-weight: 100;
+	font-style: lighter;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Pressura-Mono-Light';
+	src: url('assets/fonts/GT-Pressura-Mono-Light.woff2') format('woff2'),
+		 url('assets/fonts/GT-Pressura-Mono-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
