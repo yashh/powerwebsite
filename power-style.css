@@ -131,6 +131,7 @@ a:active {
     font-size: 1vw;
     letter-spacing: 0.02vw;
     line-height: 1.5vw;
+    padding-bottom: 5vw;
 }
 
 h1 {
@@ -405,6 +406,7 @@ h2 {
         font-size: 3vw;
         letter-spacing: 0.02vw;
         line-height: 5vw;
+        padding-bottom: 20vw;
     }
 
     h1 {
@@ -440,13 +442,13 @@ h2 {
     }
 
     .input-wrapper {
-        width: 96vw;
-        padding-left: 1vw;
+        width: 97vw;
+        padding-left: 0vw;
         display: flex;
         align-items: center;
         padding-bottom: 8vw;
         gap: 1vw;
-        bottom: 2vw;
+        bottom: 12vw;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.1);
         -webkit-backdrop-filter: blur(15px) saturate(10);
